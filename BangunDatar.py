@@ -34,15 +34,15 @@ def persegi():
     print("Keliling Persegi", keliling)
 def segitiga():
     print("Anda memilih segetiga")
-    alas = float(input("Masukkan panjang alas segitika: "))
+    alas = float(input("Masukkan alas segitika: "))
     tinggi = float(input("Masukkan tinggi segitika: "))
-    sisi_miring = (alas**2 + tinggi**2)**0,5
-    luas = 0,5 * alas * tinggi 
-    keliling = alas * tinggi + sisi_miring
+    sisi_miring = (alas**2 + tinggi**2)**1/2
+    luas = 1/2 * alas * tinggi
+    keliling = alas + tinggi + sisi_miring
     print("Luas segitiga", luas)
     print("keliling segitiga", keliling)
 
-# pengguna memilih bangu datar yang akan dihitung luas dan kelilingnya 
+# pengguna memilih bangun datar yang akan dihitung luas dan kelilingnya 
 pilih = input("Silahkan Pilih Bangun Datar (1-4): ")
 if pilih == "1":
     persegi_panjang()
